@@ -3,7 +3,7 @@
 //  OCWithJSDemo
 //
 //  Created by SSJ on 2020/11/4.
-//  Copyright © 2020 菲比寻常. All rights reserved.
+//  Copyright © 2020 SSJ. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

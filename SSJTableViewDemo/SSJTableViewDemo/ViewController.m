@@ -2,7 +2,7 @@
 //  ViewController.m
 //  SSJTableViewDemo
 //
-//  Created by 苏墨 on 2020/11/10.
+//  Created by SSJ on 2020/11/10.
 //
 
 #import "ViewController.h"
@@ -63,7 +63,7 @@
     ///上拉加载
     self.sSJTableView.jaiZaiGengDuoBlcok = ^(MJRefreshFooter * _Nonnull refreshFooter) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            NSArray *das = @[];
+            NSArray *das = @[@"张三",@"李四",@"王武",@"赵六",@"京东",@"淘宝",@"苏宁易购"];
             [weakSelf.sSJTableView updateWIthArray:das];
             [weakSelf.sSJTableView endFooterAnimate];
         });

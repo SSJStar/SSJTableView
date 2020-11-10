@@ -2,7 +2,7 @@
 //  ViewController.h
 //  SSJTableViewDemo
 //
-//  Created by 苏墨 on 2020/11/10.
+//  Created by SSJ on 2020/11/10.
 //
 
 #import <UIKit/UIKit.h>
