@@ -52,13 +52,16 @@
  }
   ```
  注意 》》〉
-    1、Test02VCCell是自定义的cell，Test02VCCell继承自SSJTableViewCell且》〉必须实现方法：  
-     ///必须要实现，否则会提示找不到方法而崩溃 
-     ```
+    1、Test02VCCell是自定义的cell，Test02VCCell继承自SSJTableViewCell且 》〉必须实现方法,否则会提示找不到方法而崩溃 :
+     
+```
      - (void)refreshUIWithModel:(id)model{
          //这里的model就是cell的Model,需要根据实际情况进行强转使用
      }
-     ```
+```
+    
     2、heightForRowAtIndexPathBlcok是告诉SSJTableView每个cell的高度，》〉必须要实现  
+    
     3、SSJTableView只针对单一的cell，如果一个tableView有多种不同的cell，请自行实现  
+    
     4、MJRefresh (3.4.3)， 其它版本的请自行测试  
