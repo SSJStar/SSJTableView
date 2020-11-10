@@ -61,12 +61,20 @@ typedef void (^JaiZaiGengDuoBlcok)(MJRefreshFooter *refreshFooter);
 
 /**     How to use ?
  
- - (SSJNoDataView *)noDataShow{
-     /// 无数据直接加载xib
-     SSJNoDataView *_noDataShow = [[[NSBundle mainBundle] loadNibNamed:@"SSJNoDataView" owner:self options:nil] lastObject];
-         _noDataShow.icon.image = [UIImage imageNamed:@"quanZi_noData"];
-         _noDataShow.titleLabel.text = @"圈子暂无更新";
-     return _noDataShow;
+ - (UIView *)noDataShow{
+     UIView *noDataShow = [UIView new];
+     float w = [UIScreen mainScreen].bounds.size.width;
+     float h = [UIScreen mainScreen].bounds.size.height;
+     CGRect fr = CGRectMake(0, 0, w, h);
+     noDataShow.frame = fr;
+     
+     CGRect titleFrame = CGRectMake(0, (h - 30) * 0.5, w, 30);
+     UILabel *titleLabel = [[UILabel alloc]initWithFrame:titleFrame];
+     titleLabel.textAlignment = NSTextAlignmentCenter;
+     titleLabel.text = @"圈子暂无更新";
+     
+     [noDataShow addSubview:titleLabel];
+     return noDataShow;
  }
 
  - (void)viewDidAppear:(BOOL)animated{
