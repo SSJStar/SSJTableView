@@ -51,7 +51,9 @@
      [self.view addSubview:self.sSJTableView];
  }
   ```
+ 
  注意 》》〉
+ 
     1、Test02VCCell是自定义的cell，Test02VCCell继承自SSJTableViewCell且 》〉必须实现方法,否则会提示找不到方法而崩溃 :
      
 ```
