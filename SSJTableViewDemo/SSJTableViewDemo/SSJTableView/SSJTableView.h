@@ -119,7 +119,9 @@ typedef void (^JaiZaiGengDuoBlcok)(MJRefreshFooter *refreshFooter);
      }
     2、heightForRowAtIndexPathBlcok是告诉SSJTableView每个cell的高度，》〉必须要实现
     3、SSJTableView只针对单一的cell，如果一个tableView有多种不同的cell，请自行实现
-    4、MJRefresh (3.4.3)， 其它版本的请自行测试
+    4、ShuaXinBlcok是告诉控制器，tablView已经处于刷新状态（顶部有个菊花在转）
+    5、JaiZaiGengDuoBlcok是告诉控制器，tablView已经处于正在加载更多状态（底部有个菊花在转）
+    6、MJRefresh (3.4.3)， 其它版本的请自行测试
  */
 
 
